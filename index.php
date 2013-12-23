@@ -1,11 +1,11 @@
 <?php 
-$key = '03E3DF086AE230985A4D70210128832E';  // replace with your unique API key, won't work without this
+$key = '{key}'; // replace with your unique API key, won't work without this
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Untitled Form</title>
+<title>Teleduino Control Panel</title>
 <link rel="stylesheet" type="text/css" href="reset.css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -16,7 +16,7 @@ $key = '03E3DF086AE230985A4D70210128832E';  // replace with your unique API key,
 <! just for neatness, including this lable prior to the pins makes it easier to distinguish functions>
 		<p><label class="getDigitalInput" for="getDigitalInput" name="getDigitalInput">getDigitalInput </label>
 		<! hidden labels to set your api preferences and generate a proper query>
-		<input type="hidden" name="k" id="k" value="<?php echo $key; ?>"> <! unique API key, won't work without this>
+		<input type="hidden" name="k" id="k" value="<?php echo $key; ?>">
 		<input type="hidden" name="r" id="r" value="getDigitalInput"> <! request, you generate this for every function EVERY time you post the form>
 		<label for="pin">pins</label>
 		<! for each pin you want to read out create this: >
